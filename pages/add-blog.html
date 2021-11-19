@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mycompany | add blog</title>
+<link href="/css/style.css" rel="stylesheet"></head>
+<body>
+    <div class="container-fluid">
+        <section class="top-menu">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg w-100 custom-bgcolor2">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <a class="navbar-brand p-0" href="./">
+                        <img src="/images/logo.png" alt="logo-png">
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbar-content">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="./">الرئيسية</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="/about.html">عن الشركة</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="/projects.html">مشاريعنا</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="/blog.html">المدونة</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="/contact.html">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section class="banner banner-add-blog">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-img">
+                        <div class="overlay">
+                            <h1 class="text-center">إضافة التدوينة</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-blog my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <form class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <label for="blog-title">عنوان التدوينة</label>
+                                    <input type="text" name="blog-title" id="blog-title" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        يرجى أدخال عنوان التدوينة
+                                      </div>
+                                </div>
+                                <div class="col-md-6 mt-4">
+                                    <label for="blog-image">صور التدوينة</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="blog-image" required>
+                                        <label class="custom-file-label" for="blog-image">Choose file</label>
+                                        <div class="invalid-feedback">
+                                            يرجى اختيار صور التدوينة
+                                          </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <label for="blog-des">تفاصيل التدوينة</label>
+                                    <textarea class="form-control" name="blog-des" id="blog-des" cols="30" rows="5" placeholder="النص" required></textarea>
+                                    <div class="invalid-feedback">
+                                        يرجى أدخال تفاصيل عن التدوينة
+                                      </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn custom-btn border my-4">إضافة التدوينة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="pt-5 pb-2">
+            <div class="container border-between">
+                <div class="footer-nav">
+                    <div class="footer-logo text-center">
+                        <a href="./">
+                            <img src="/images/logo.png" alt="logo image">
+                        </a>
+                    </div>
+                    <ul class="list-inline menu-list text-center">
+                        <li class="list-inline-item"><a href="./">الصفحة الرئيسية</a></li>
+                        <li class="list-inline-item"><a href="about.html">من نحن</a></li>
+                        <li class="list-inline-item"><a href="projects.html">المشاريع السابقة</a></li>
+                        <li class="list-inline-item"><a href="blog.html">المدونة</a></li>
+                        <li class="list-inline-item"><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-sub text-center">
+                    <label for="sub-email">اشترك بالنشرة البريدية</label>
+                    <form class="form-group">
+                        <div class="input-group">
+                            <input type="email" class="form-control custom-input"
+                            name="sub-email" id="sub-email" placeholder="البريد الإكتروني" required>
+                            <button type="submit" class="btn custom-btn custom-btn-sub">متابعة</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-end">
+                    <div class="clearfix">
+                        <div class="copyright float-right"><span></span></div>
+                        <div class="social-media float-left">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="/js/bundle.js"></script></body>
+</html>
